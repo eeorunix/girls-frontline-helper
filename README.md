@@ -2,19 +2,20 @@
 
 少女前线（Girls Frontline）辅助脚本。
 
-## 环境配置
+## 最大特点
 
-- python 2.7
-- aircv, numpy, opencv-python, pywin32
-- 使用mumu模拟器
-- 模拟器分辨率大小需设为1024x576
+- 纯后台进行，后台截图，后台按键，无限刷关卡的同时，可以干任何事
+- 自动修理，自动分解三星，自动使用二星强化当前首位枪娘
+- 脚本稳定，有错误自动回正功能，实现无限挂机不卡死
 
 ## 安装流程
 
 - 安装python 2.7
-- 安装第三方库
+- 安装第三方库aircv, numpy, opencv-python, pywin32
 - 将python.exe运行模式设置成管理员身份运行
 - 将main.py以python.exe方式打开，即可使用
+- 安装mumu模拟器
+- 模拟器分辨率大小需设为1024x576
 
 ## 使用方式
 
