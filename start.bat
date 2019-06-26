@@ -20,16 +20,17 @@ pushd "%CD%"
 CD /D "%~dp0"
 
 if exist C:\Python27\python.exe (
-    echo python´æÔÚ
-    echo °²×°µÚÈý·½¿â
+    echo pythonï¿½ï¿½ï¿½ï¿½
+    echo ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
     C:\Python27\python.exe -m pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com -r requirements.txt
 
-    echo µÚÈý·½¿â°²×°Íê³É
-    echo ÔËÐÐ½Å±¾
+    echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â°²×°ï¿½ï¿½ï¿½
+    echo ï¿½ï¿½ï¿½Ð½Å±ï¿½
 
     C:\Python27\python.exe main.py
 ) else (
-    echo python ²»´æÔÚ£¬Çë°²×°python2.7
+    echo python ï¿½ï¿½ï¿½ï¿½ï¿½Ú£ï¿½ï¿½ë°²×°python2.7
 )
+
 pause
