@@ -20,17 +20,17 @@ pushd "%CD%"
 CD /D "%~dp0"
 
 if exist C:\Python27\python.exe (
-    echo python����
-    echo ��װ��������
+    echo python exist
+    echo install site packages
 
     C:\Python27\python.exe -m pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com -r requirements.txt
 
-    echo �������ⰲװ���
-    echo ���нű�
+    echo install complete
+    echo run
 
     C:\Python27\python.exe main.py
 ) else (
-    echo python �����ڣ��밲װpython2.7
+    echo python doesn't exist, please install python2.7
 )
 
 pause
