@@ -134,7 +134,7 @@ class KO(Template):
                 time.sleep(1.0)
             elif index == 13:
                 self.mouse_left_click(735, 189)
-                time.sleep(1.0)
+                time.sleep(3.0)
             elif index == 14:
                 self.mouse_left_click(112, 252)
                 time.sleep(0.5)
