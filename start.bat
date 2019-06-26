@@ -32,3 +32,4 @@ if exist C:\Python27\python.exe (
 ) else (
     echo python 不存在，请安装python2.7
 )
+pause
