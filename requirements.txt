@@ -1,4 +1,0 @@
-aircv
-numpy
-opencv-python
-pywin32
