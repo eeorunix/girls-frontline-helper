@@ -1,5 +1,5 @@
 # -*- encoding=utf8 -*-
-__author__ = "roeexu"
+__author__ = "eeorunix"
 
 import time
 from airtest.core.api import *
@@ -59,13 +59,7 @@ def detach():
     global cnt
     global start
     screen = G.DEVICE.snapshot()
-    if is_found(Template(r"tpl1644759211589.png", record_pos=(-0.174, -0.068), resolution=(1024, 665))):
-        return 0
-    elif is_found(Template(r"tpl1644760467484.png", record_pos=(-0.002, 0.179), resolution=(1024, 665)), g((432, 462), (432, 498), (589, 498))):
-        return 0
-    elif is_found(Template(r"tpl1644770680696.png", record_pos=(-0.306, -0.177), resolution=(1024, 576)), g((34, 68), (34, 147), (364, 147))):
-        return 0
-    elif is_found(Template(r"tpl1644856635384.png", record_pos=(0.41, -0.223), resolution=(1024, 576)), g((925, 51), (925, 70), (940, 70))):
+    if is_found(Template(r"tpl1644856635384.png", record_pos=(0.41, -0.223), resolution=(1024, 576)), g((925, 51), (925, 70), (940, 70))):
         return 0
     elif is_found(Template(r"tpl1644856716623.png", target_pos=4, record_pos=(-0.354, -0.255), resolution=(1024, 576)), g((57, 12), (57, 43), (242, 43))):
         return 0
@@ -75,8 +69,6 @@ def detach():
         return 0
     elif is_found(Template(r"tpl1644857668036.png", record_pos=(-0.264, -0.158), resolution=(1024, 576)), g((204, 117), (204, 135), (280, 135))) and is_found(Template(r"tpl1644857743214.png", record_pos=(0.248, 0.146), resolution=(1024, 576)), g((712, 419), (712, 456), (821, 456))):
         return 9
-    elif is_found(Template(r"tpl1644764587416.png", record_pos=(-0.076, -0.027), resolution=(1024, 665))):
-        return 2
     elif is_found(Template(r"tpl1644764815224.png", threshold=0.97, target_pos=5, record_pos=(-0.479, -0.009), resolution=(1024, 665))):
         return 0
     elif is_found(Template(r"tpl1644771271544.png", record_pos=(-0.409, -0.074), resolution=(1024, 576)), g((61, 198), (61, 226), (125, 226))):
@@ -169,14 +161,6 @@ def attach():
         touch(XY)
     elif index == 1:
         logger.debug("============>" + str(XY))
-    elif index == 2:
-        x, y = XY
-        touch((x + 50, y))
-        sleep(0.2)
-        text("xuruoyi888")
-        sleep(0.2)
-        is_found(Template(r"tpl1644764739425.png", record_pos=(0.111, 0.018), resolution=(1024, 665)))
-        touch(XY)
     elif index == 3:
         swipe((200, 283), vector=[0.0, 0.4], steps=3, duration=0.2)
         sleep(3.0)
@@ -185,9 +169,13 @@ def attach():
         sleep(2.0)
     elif index == 5:
         sleep(5.0)
-        touch((60, 472))
+        touch((320, 460))
         sleep(0.2)
         touch((320, 460))
+        sleep(0.2)
+        touch((932, 447))  # 补给
+        sleep(0.5)
+        touch((60, 472))
         sleep(0.2)
         touch((535, 242))
         sleep(0.2)
