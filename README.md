@@ -34,7 +34,7 @@
 
 ## 使用流程
 
-- ~~安装[python2.7](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi)~~（或安装[python3.7](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)，该步貌似可以省）
+- ~~安装[python2.7](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi)或安装[python3.7](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)~~（该步貌似可以省）
 - 安装[AirtestIDE](https://airtest.netease.com/changelog.html)
 - 安装[mumu模拟器](https://mumu.163.com/)，模拟器分辨率大小需设为1024x576
 - [AirtestIDE连接mumu模拟器](https://airtest.doc.io.netease.com/IDEdocs/3.2device_connection/2_emulator_connection/)
