@@ -10,8 +10,8 @@
 
 | 功能名称 | 对应文件夹 | 功能点 | 详细说明文档 |
 | --- | --- | --- | --- |
-| 普通0-1拖尸 | [NORMAL_0-1.air](NORMAL_0-1.air) | `升级` `人型狗粮` `替代核心` | <!-- [→](NORMAL_0-1.air/README.md) --> |
-| 夜战8-1炸狗 | [MIDNIGHT_8-1.air](MIDNIGHT_8-1.air) | `升级` `装备狗粮` `低耗资源` | [〓〓](MIDNIGHT_8-1.air/README.md) |
+| 普通0-1拖尸 | [NORMAL_0-1.air](NORMAL_0-1.air) | `升级` `人型狗粮` `替代核心` | [〓〓〓](NORMAL_0-1.air/README.md) |
+| 夜战8-1炸狗 | [MIDNIGHT_8-1.air](MIDNIGHT_8-1.air) | `升级` `装备狗粮` `低耗资源` | [〓〓〓](MIDNIGHT_8-1.air/README.md) |
 
 ## 更新日志
 
