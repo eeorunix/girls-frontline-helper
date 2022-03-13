@@ -84,6 +84,8 @@ def detach():
     elif is_found(Template(r"tpl1644771405564.png", record_pos=(-0.198, -0.237), resolution=(1024, 576)), g((261, 21), (261, 69), (357, 69))):
         return 3
     elif is_found(Template(r"tpl1644771706558.png", record_pos=(-0.151, -0.247), resolution=(1024, 576)), g((338, 6), (338, 65), (377, 65))) and is_found(Template(r"tpl1644771774441.png", record_pos=(0.386, 0.221), resolution=(1024, 576)), g((842, 500), (842, 529), (972, 529))):
+        pinch(in_or_out='in', center=None, percent=0.5)
+        sleep(2.0)
         if is_found(Template(r"tpl1647058842350.png", record_pos=(-0.011, 0.06), resolution=(1024, 576)), g((340, 218), (340, 480), (662, 480))):
             if time.time() - start > 2:
                 cnt += 1
@@ -95,11 +97,8 @@ def detach():
     elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647063577054.png", record_pos=(0.311, 0.241), resolution=(1024, 576)), g((797, 518), (797, 552), (863, 552))):
         return 5
     elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1644773034403.png", record_pos=(0.311, 0.243), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647066298630.png", record_pos=(-0.439, 0.179), resolution=(1024, 576)), g((2, 456), (2, 487), (122, 487))):
-        if is_found(Template(r"tpl1647154686368.png", record_pos=(-0.324, 0.139), resolution=(1024, 576)), g((0, 300), (0, 550), (300, 550))):
-            return 13
-        else:
-            return 11
-    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647144019805.png", record_pos=(0.311, 0.242), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647154686368.png", record_pos=(-0.324, 0.139), resolution=(1024, 576)), g((0, 300), (0, 550), (300, 550))):
+        return 11
+    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647144019805.png", record_pos=(0.311, 0.242), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))):
         return 12
     elif is_found(Template(r"tpl1644773664247.png", record_pos=(-0.437, -0.248), resolution=(1024, 576)), g((31, 18), (31, 51), (100, 51))):
         XY = (XY[0] + 100, XY[1])
@@ -163,15 +162,15 @@ def attach():
         touch((74, 116))
         sleep(1.0)
         touch((60, 472))
-        sleep(0.5)
+        sleep(1.0)
         touch((224, 135))
-        sleep(0.5)
+        sleep(1.0)
         touch((155, 243))
-        sleep(0.5)
+        sleep(1.0)
         touch((178, 493))
-        sleep(0.5)
+        sleep(1.0)
         touch((170, 493))
-        sleep(0.5)
+        sleep(1.0)
         touch((900, 510))
         sleep(7.0)
     elif index == 8:
@@ -217,24 +216,24 @@ def attach():
         touch((928, 507))  # 确定
         sleep(1.0)
         touch((87, 42))  # 后退
-    elif index == 13:
-        touch(XY)  # 机场
+        sleep(10.0)
+        touch((183, 428))  # 机场
         sleep(1.0)
         touch((932, 508))  # 确认部署
         sleep(1.0)
-        touch(XY)  # 机场
+        touch((183, 428))  # 机场
         sleep(0.5)
-        touch(XY)  # 机场
+        touch((183, 428))  # 机场
         sleep(1.0)
         touch((932, 447))  # 补给
         sleep(1.0)
-        touch(XY)  # 机场
+        touch((183, 428))  # 机场
         sleep(1.0)
         touch((783, 509))  # 撤离
         sleep(1.0)
         touch((594, 396))  # 确认撤离
         sleep(1.0)
-        touch(XY)  # 机场
+        touch((183, 428))  # 机场
         sleep(1.0)
         touch((201, 502))  # 队伍编成
         sleep(3.0)
