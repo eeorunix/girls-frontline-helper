@@ -94,7 +94,7 @@ def detach():
             return 8
         else:
             return 4
-    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647063577054.png", record_pos=(0.311, 0.241), resolution=(1024, 576)), g((797, 518), (797, 552), (863, 552))):
+    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647063577054.png", threshold=0.75, rgb=True, record_pos=(0.311, 0.241), resolution=(1024, 576)), g((797, 518), (797, 552), (863, 552))):
         return 5
     elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1644773034403.png", record_pos=(0.311, 0.243), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647066298630.png", record_pos=(-0.439, 0.179), resolution=(1024, 576)), g((2, 456), (2, 487), (122, 487))):
         return 11
@@ -158,21 +158,21 @@ def attach():
     elif index == 5:
         sleep(1.0)
         touch((74, 116))
-        sleep(1.0)
+        sleep(0.5)
         touch((74, 116))
-        sleep(1.0)
+        sleep(0.2)
         touch((60, 472))
-        sleep(1.0)
+        sleep(0.2)
         touch((224, 135))
-        sleep(1.0)
+        sleep(0.2)
         touch((155, 243))
-        sleep(1.0)
+        sleep(0.2)
         touch((178, 493))
-        sleep(1.0)
-        touch((170, 493))
-        sleep(1.0)
+        sleep(0.2)
+        touch((168, 493))
+        sleep(0.2)
         touch((900, 510))
-        sleep(7.0)
+        sleep(10.0)
     elif index == 8:
         touch((224, 118))  # 左上机场
         sleep(2.0)
