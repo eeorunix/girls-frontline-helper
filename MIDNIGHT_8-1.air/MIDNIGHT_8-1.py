@@ -9,7 +9,7 @@ ST.CVSTRATEGY = ["tpl"]
 ST.THRESHOLD = 0.8
 ST.SAVE_IMAGE = False
 ST.RESIZE_METHOD = None
-DEBUG = 0
+DEBUG = 1
 
 import logging
 logger = logging.getLogger("airtest")
@@ -94,11 +94,12 @@ def detach():
             return 4
     elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647063577054.png", record_pos=(0.311, 0.241), resolution=(1024, 576)), g((797, 518), (797, 552), (863, 552))):
         return 5
-    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1644773034403.png", record_pos=(0.311, 0.243), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647144133863.png", record_pos=(-0.325, 0.142), resolution=(1024, 576)), g((170, 419), (170, 448), (188, 448))):
-        return 13
     elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1644773034403.png", record_pos=(0.311, 0.243), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647066298630.png", record_pos=(-0.439, 0.179), resolution=(1024, 576)), g((2, 456), (2, 487), (122, 487))):
-        return 11
-    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647144019805.png", record_pos=(0.311, 0.242), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647144133863.png", record_pos=(-0.325, 0.142), resolution=(1024, 576)), g((170, 419), (170, 448), (188, 448))):
+        if is_found(Template(r"tpl1647153599273.png", record_pos=(-0.311, 0.152), resolution=(1024, 576)), g((0, 300), (0, 550), (300, 550))):
+            return 13
+        else:
+            return 11
+    elif is_found(Template(r"tpl1647063538393.png", record_pos=(-0.149, -0.234), resolution=(1024, 576)), g((341, 29), (341, 67), (378, 67))) and is_found(Template(r"tpl1647144019805.png", record_pos=(0.311, 0.242), resolution=(1024, 576)), g((801, 517), (801, 555), (861, 555))) and is_found(Template(r"tpl1647153599273.png", record_pos=(-0.311, 0.152), resolution=(1024, 576)), g((0, 300), (0, 550), (300, 550))):
         return 12
     elif is_found(Template(r"tpl1644773664247.png", record_pos=(-0.437, -0.248), resolution=(1024, 576)), g((31, 18), (31, 51), (100, 51))):
         XY = (XY[0] + 100, XY[1])
@@ -213,23 +214,23 @@ def attach():
         sleep(1.0)
         touch((87, 42))  # 后退
     elif index == 13:
-        touch((183, 428))  # 机场
+        touch(XY)  # 机场
         sleep(1.0)
         touch((932, 508))  # 确认部署
         sleep(1.0)
-        touch((183, 428))  # 机场
+        touch(XY)  # 机场
         sleep(0.5)
-        touch((183, 428))  # 机场
+        touch(XY)  # 机场
         sleep(1.0)
         touch((932, 447))  # 补给
         sleep(1.0)
-        touch((183, 428))  # 机场
+        touch(XY)  # 机场
         sleep(1.0)
         touch((783, 509))  # 撤离
         sleep(1.0)
         touch((594, 396))  # 确认撤离
         sleep(1.0)
-        touch((183, 428))  # 机场
+        touch(XY)  # 机场
         sleep(1.0)
         touch((201, 502))  # 队伍编成
         sleep(3.0)
