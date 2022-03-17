@@ -14,6 +14,23 @@
 | 夜战8-1炸狗 | [MIDNIGHT_8-1.air](MIDNIGHT_8-1.air) | `升级` `装备狗粮` `低耗资源` | [〓〓〓](MIDNIGHT_8-1.air/README.md) |
 | 普通0-2拖尸 | [NORMAL_0-2.air](NORMAL_0-2.air) | `升级` `人型狗粮` `替代核心` | [〓〓〓](NORMAL_0-2.air/README.md) |
 
+## 使用流程
+
+- ~~安装[python2.7](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi)或安装[python3.7](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)~~（该步貌似可以省）
+- 安装[AirtestIDE](https://airtest.netease.com/changelog.html)
+- 安装[mumu模拟器](https://mumu.163.com/)，模拟器分辨率大小需设为1024x576
+- [AirtestIDE连接mumu模拟器](https://airtest.doc.io.netease.com/IDEdocs/3.2device_connection/2_emulator_connection/)
+- 在IDE中打开`.air`文件夹
+- mumu模拟器在`少女前线`主界面上，并在IDE中按`运行`键（F5）
+
+## 注意事项
+
+- 在游戏主界面运行脚本
+- 需要关闭自动补给
+- `分辨率设置`为1024×576且`DPI`为160（`DPI`小能使游戏流畅，但又不能太小不然影响图像识别）
+- 有条件的性能至少设置为：2CPU、4G内存
+- 如果有任何关卡的需求或者其他额外的需求，请留言issue，最近我回坑了，会及时回复
+
 ## 更新日志
 
 ### 2022年3月17日
@@ -37,20 +54,3 @@
 2. 不能直接识别像素点的颜色
 3. 无法导出exe
 4. 无法自定义前端操作界面类似于按键精灵
-
-## 使用流程
-
-- ~~安装[python2.7](https://www.python.org/ftp/python/2.7.16/python-2.7.16.amd64.msi)或安装[python3.7](https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe)~~（该步貌似可以省）
-- 安装[AirtestIDE](https://airtest.netease.com/changelog.html)
-- 安装[mumu模拟器](https://mumu.163.com/)，模拟器分辨率大小需设为1024x576
-- [AirtestIDE连接mumu模拟器](https://airtest.doc.io.netease.com/IDEdocs/3.2device_connection/2_emulator_connection/)
-- 在IDE中打开`.air`文件夹
-- mumu模拟器在`少女前线`主界面上，并在IDE中按`运行`键（F5）
-
-## 注意事项
-
-- 在游戏主界面运行脚本
-- 需要关闭自动补给
-- `分辨率设置`为1024×576且`DPI`为160（`DPI`小能使游戏流畅，但又不能太小不然影响图像识别）
-- 有条件的性能至少设置为：2CPU、4G内存
-- 如果有任何关卡的需求或者其他额外的需求，请留言issue，最近我回坑了，会及时回复
